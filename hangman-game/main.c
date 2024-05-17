@@ -175,6 +175,7 @@ void hangmanGame() {
 	chooseWord();
 
 	do {
+		printf("\e[1;1H\e[2J"); // clear screen
 		drawGibbet();
 		guess();
 	} while (!won() && !hanged());
