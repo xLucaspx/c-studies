@@ -67,6 +67,12 @@ void moveGhost() {
 				chooseGhostDirection(actual, &next);
 
 				char replacement = mapCopy.matrix[next.x][next.y];
+
+				// avoids duplicating enemies
+				if (replacement == ENEMY) {
+					continue;
+				}
+
 				if (replacement == PLAYER) {
 					replacement = ' ';
 				}
@@ -179,7 +185,7 @@ int defeat() {
 	return lost;
 }
 
-int main(void) {
+int main() {
 	readMap(&map);
 	findInMap(PLAYER, &map, &playerPosition);
 

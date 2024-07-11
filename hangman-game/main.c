@@ -42,7 +42,7 @@ void chooseWord() {
 	FILE *f = fopen("words.txt", "r");
 
 	if (f == 0) {
-		printf("Word database not available!\n\n");
+		perror("Word database not available!\n\n");
 		exit(1);
 	}
 
@@ -232,7 +232,7 @@ void addWord() {
 	FILE *f = fopen("words.txt", "r+");
 
 	if (f == 0) {
-		printf("Word database not available!\n\n");
+		perror("Word database not available!\n\n");
 		exit(1);
 	}
 

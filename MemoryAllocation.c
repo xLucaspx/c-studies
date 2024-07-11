@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main() {
 	// malloc is used for memory allocation
 	// sizeof is a magic function from tha language that returns the size of a given type
 	// regardless of the architecture or system being used
