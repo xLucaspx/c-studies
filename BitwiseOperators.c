@@ -2,12 +2,12 @@
 
 int main() {
 	/**
-	 * AND	(&) - useful to turn selected bits off (0)
-	 * OR		(|) - useful to turn selected bits on (1)
-	 * XOR	(^) - useful to inverse selected bits
-	 * NOT	(~) - useful to inverse all bits
+	 * AND	(&) - useful for turning selected bits off (0)
+	 * OR	(|) - useful for turning selected bits on (1)
+	 * XOR	(^) - useful for inverting selected bits
+	 * NOT	(~) - useful for inverting all bits
 	 *
-	 * SHIFT-LEFT		(<<) - shifts n bits left (multiplies by 2 n times)
+	 * SHIFT-LEFT	(<<) - shifts n bits left (multiplies by 2 n times)
 	 * SHIFT-RIGHT	(>>) - shifts n bits right (divides by 2 n times)
 	 */
 
@@ -37,7 +37,7 @@ int main() {
 	/**
 	 * We can use that to extract colors from RGB
 	 * Consider an RGB color in the format 0x009dda;
-	 * - To extract red, we shift 16 bits right		(>> 16);
+	 * - To extract red, we shift 16 bits right	(>> 16);
 	 * - To extract green, we shift 8 bits right	(>> 8);
 	 * - To extract blue, we don't need to shift.
 	 * Finally, whe clear our result with '& 0xFF'
